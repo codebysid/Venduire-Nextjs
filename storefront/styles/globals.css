@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply p-0 m-0;
+}
+.inputField {
+  @apply rounded-xl p-4 outline-green-700 focus:outline-green-700;
+}
+.inputField {
+  background: #3b3b3b;
+  color: white;
+}
+
+.navItems {
+  @apply p-2 font-extrabold text-xl hover:border-b-2 hover:border-b-green-700;
+}
+
+.btn,
+.primaryBtn {
+  @apply bg-green-700 text-white p-4 rounded-xl hover:bg-green-500 transition-all hover:text-black;
+}
+.imagZoom:hover .img {
+  transform: scale(1.5);
+}
+.error {
+  @apply bg-red-500 text-white p-2 mb-6 rounded;
+}
+
+.loading {
+  @apply bg-blue-500 p-2 text-white rounded mb-6;
+}
+
+.imageZoom {
+  @apply rounded-2xl h-96 w-96 hover:scale-125 transition-all duration-500;
+}
+
+.badge {
+  @apply border-2 border-green-700 p-2 mr-2 rounded-2xl;
+}
+
+.listItem {
+  @apply hover:border-b-2 hover:border-b-green-500 text-green-700 font-bold;
+}
+
+.externalLink {
+  @apply border-b-2 border-b-green-500 text-green-700 font-bold w-fit text-lg hover:text-green-500 hover:border-b-green-500;
+}
+
+.externalLinkLabel {
+  @apply text-lg;
+}
+.slideActive {
+  @apply opacity-100 transition-all scale-150;
+}
+
+.slide {
+  @apply opacity-0 transition-all scale-0;
+}
+
+.darkModeCheckBox {
+  @apply relative appearance-none h-8 bg-white w-16 rounded-2xl transition-all before:absolute before:h-6 before:w-6 before:bg-yellow-500 before:rounded-2xl checked:before:left-10 before:transition-all before:bottom-1
+checked:bg-black;
+}
+
+.moonIcon {
+  @apply relative bottom-8 left-11 text-white;
+}
+
+.sunIcon {
+  @apply relative bottom-12 left-0;
+}
+
+.mainApp {
+  @apply flex flex-col justify-center items-center;
+}
+
+.illustrationHead {
+  @apply font-extrabold text-6xl text-green-700 w-max;
+}
+
+.illustrationSubHead {
+  @apply text-lg text-gray-500 italic;
+}
+
+.line {
+  @apply w-screen h-1 border border-black;
+}
+
+.highlight {
+  @apply bg-green-700 m-2 p-2 rounded-2xl;
+}
+
+.highlightForGradient {
+  @apply underline mx-2 text-green-700;
+}
+.banner2Image {
+  @apply h-1/2 w-1/2 absolute;
+}
+
+.sliderHeight {
+  height: 35vw;
+}
+
+.starIcon {
+  @apply absolute text-5xl right-2 bottom-1;
+}
+
+.ternaryBtn {
+  @apply text-red-900 underline hover:text-red-500 text-left w-fit;
+}
+
+.userSettingOption {
+  @apply p-2 hover:bg-green-500;
+}
+
+.banner1 {
+  height: 35rem;
+}
+
+#toggle {
+  position: relative;
+  appearance: none;
+  height: 2vw;
+  width: 4vw;
+  border-radius: 8vw;
+  transition: 0.5s;
+  background: #ececec;
+  z-index: 0;
+  cursor: pointer;
+}
+
+#toggle::before {
+  content: "";
+  position: absolute;
+  height: 1.5vw;
+  width: 1.5vw;
+  top: 0.2vw;
+  left: 0.4vw;
+  border-radius: 50%;
+  background: linear-gradient(to right, #fdc830, #f37335);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#toggle:checked::before {
+  left: 2vw;
+  background: linear-gradient(to right, #000000, #434343);
+  cursor: pointer;
+}
+
+#toggle:checked {
+  background-color: #333333;
+}
+
+#sunIcon {
+  position: absolute;
+  font-size: 1vw;
+  position: relative;
+  color: #333333;
+  z-index: 1;
+  cursor: pointer;
+  bottom: 1.9vw;
+  left: 0.7vw;
+}
+
+#moonIcon {
+  position: absolute;
+  font-size: 1vw;
+  position: relative;
+  color: #ececec;
+  cursor: pointer;
+  left: 2.5vw;
+  bottom: 2.9vw;
+}
