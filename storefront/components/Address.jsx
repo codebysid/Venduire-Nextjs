@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import { SELECT_ADDRESS_MUTATION } from "@/graphQLqueries/SELECT_ADDRESS";
 import { useRouter } from "next/router";
 import { BILLING_ADDRESS_MUTATION } from "@/graphQLqueries/SET_BILLING_ADDRESS";
-import { AddressCard } from "./AddressCard";
+import AddressCard from "./AddressCard";
 
 const Address = () => {
   const [nameOfAddress, setNameOfAddress] = useState("");
